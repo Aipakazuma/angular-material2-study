@@ -1,3 +1,13 @@
+# 試したメモ
+
+```sh
+$ ng init
+$ npm install @angular/material ng2-md-datable --save
+```
+
+[https://github.com/angular/material2](https://github.com/angular/material2)
+[https://github.com/fredguile/ng2-md-datatable](https://github.com/angular/material2)
+
 # AngularMaterial2Study
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
