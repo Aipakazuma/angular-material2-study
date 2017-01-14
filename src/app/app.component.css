@@ -1,0 +1,8 @@
+.mdl-grid {
+  max-width: 980px;
+}
+.box {
+  background: #ccc;
+  padding: 10px;
+  text-align: center;
+}
