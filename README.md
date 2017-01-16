@@ -4,9 +4,57 @@
 $ ng init
 $ npm install @angular/material ng2-md-datable --save
 ```
-
 [https://github.com/angular/material2](https://github.com/angular/material2)
 [https://github.com/fredguile/ng2-md-datatable](https://github.com/angular/material2)
+
+# material design lite 勉強メモ
+
+## grid
+
+* bootstrapと同じかな？
+  * .container -> .row -> .col-x-xx が、.mdl-grid -> .mdl-cellみたいな感じ
+* .mdl-gridの大きさは自分で決める
+  * .mdl-grid { max-width: 980px; }
+* mdl-cellは色々種類がある
+  * [https://getmdl.io/components/index.html#layout-section/grid](https://getmdl.io/components/index.html#layout-section/grid)
+  * bootstrapと同じで12カラム ... cellで幅を調整する
+  * mdl-cell mdl-cell--x-col という感じ
+  * desktop tablet phone というdevice毎に調整できるクラスもある
+    * mdl-cell--9-col-desktop - デスクトップのときに9cellにする
+    * mdl-cell--12-col-phone - スマホのときに12cellにする
+    * mdl-cell--6-col-table - タブレットのときに6cellにする
+  * 特定のデバイスで消したいときは mdl-cell--hide-tablet のようにすればおｋ
+
+## layout
+
+mdl-layoutと、mdl-js-layoutを付与したclassを用意
+※bodyには付与しちゃダメらしい
+
+```html
+<div class="mdl-layout mdl-js-layout">
+</div>
+```
+
+headerを追加。mdl-layout__headerは大きめのスクリーンだとnavigationのlinkを表示します。
+
+スクリーンが小さくなるとnavigationは隠れるようになり、menu iconが表示されるようになる。
+
+```html
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+    	<span class="mdl-layout__title">Simple Layout</span>
+    </div>
+  </header>
+</div>
+```
+
+
+
+
+
+## navigation
 
 # AngularMaterial2Study
 
